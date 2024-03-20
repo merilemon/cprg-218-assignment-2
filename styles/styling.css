@@ -87,31 +87,65 @@ nav {
 
 /* accordion */
 
-.accordion-box {
-    
-}
-.accordion {
+.accordion-container {
+    background-color: #1a237e;
     display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: center;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+
+    h2 {
+        margin-bottom: 10px;
+        color: #FFCC33;
+    }
+
+}
+
+.accordion {
+    background-color: #fff;
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 1.5rem;
     width: 100%;
-    padding: 4% 2%;
-    box-sizing: border-box;
-    height: 80vh;
-  }
+    border: none;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+ 
+.active, .accordion:hover {
+    background-color: rgb(252, 187, 0);
+    color: black;
+    border: none;
+}
+
+.accordion:after {
+    font-size: 15px;
+    content: '\002B';
+    color: #000;
+    float: right;
+}
+
+.active:after {
+    content: '\002D';
+    color: black;
+}
   
-  .box {
-    flex: 1;
+.panel {
+    background-color: #fff;
+    max-height: 0;
+    border-radius: 20px;
     overflow: hidden;
-    transition: .5s;
-    margin: 0 2%;
-    line-height: 0;
-  }
-  
-  .box > img {
-    width: 200%;
-    height: calc(100% - 10vh);
-    object-fit: cover; 
-    transition: .5s;
-  }
-  
-  
-  .box:hover { flex: 1 1 70%; }
+    transition: max-height 0.2s ease-out;
+    
+    p{
+        padding: 1.5rem;
+        text-align: left;
+    }
+}
+
