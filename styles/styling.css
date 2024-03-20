@@ -115,8 +115,3 @@ nav {
   
   
   .box:hover { flex: 1 1 70%; }
-  .box:hover > img {
-    width: 100%;
-    height: 100%;
-  }
-   
