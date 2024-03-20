@@ -37,3 +37,86 @@ nav {
     }
 }
 
+/* content section */
+
+#content-box {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+.content-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5rem;
+    
+}
+
+/* skill section */
+
+.skl {
+    justify-content:space-around;
+}
+.skills {
+    margin: auto;
+    
+    td {
+        padding-right: 25px;
+        padding-left: 25px;
+}
+
+    tr:hover .star i{
+        color: #FFCC33;
+        transition: 0.5s;
+    }
+}
+
+.skills img {
+    width: 30px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.star {
+    text-align: right;
+}
+
+/* accordion */
+
+.accordion-box {
+    
+}
+.accordion {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 80vh;
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    line-height: 0;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  
+  .box:hover { flex: 1 1 70%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+   

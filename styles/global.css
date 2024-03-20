@@ -5,10 +5,11 @@
 }
 
 a {
-    color: black;
     text-decoration: none;
+    color: #000;
 }
 
 a:hover {
-    
+    color: #FFCC33;
+    transition: 0.5s;
 }

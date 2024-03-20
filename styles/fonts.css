@@ -4,10 +4,22 @@ body {
 }
 
 h1 {
-    font-family: 'EB Garamond', sans-serif;
+    font-family: 'DM Serif Display', sans-serif;
     font-size: 50px;
+    color: #1a237e;
 }
 
+h2 {
+    font-family: 'DM Serif Display', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+h3 {
+    color: #1a237e;
+    line-height: 5rem;
+    font-weight: 500;
+}
 p {
-    
+    padding-bottom: 1.5rem;
 }
