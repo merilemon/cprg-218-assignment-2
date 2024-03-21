@@ -1,3 +1,5 @@
+/* accordion */
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -13,4 +15,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-document.getElementById('year').innerHTML = new Date().getFullYear();
+document.getElementById('yr').innerHTML = new Date().getFullYear();
+
+/* footer date */
+
